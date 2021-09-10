@@ -1,0 +1,59 @@
+/*
+Theme Name: Thème Ikadia
+Theme URI: https://ikadia.fr
+Author: Tom Wallendorf
+Author URI: https://www.monsite.com/monsite
+Description: Un thème pour le test Ikadia
+Version: 1.0
+*/
+
+/* Général*/
+body {
+    color:rgb(58, 58, 58);
+    font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    background-color: #eeeeee;
+  }
+
+/* Menu */
+div.main-menu ul {
+    margin:5px 0px 5px 0px;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+    text-align:left;
+}
+div.main-menu li {
+    padding: 0px 5px 0px 0px;
+    display: inline;
+} 
+div.main-menu a { 
+    color:#000000;
+    list-style: none;
+}
+div.main-menu > ul > li > a{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+    letter-spacing: 0.10em;
+  }
+div.main-menu > ul > li > a:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(26, 26, 26);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+div.main-menu > ul > li:hover > a::after{
+    width: 100%; 
+    left: 0; 
+}
